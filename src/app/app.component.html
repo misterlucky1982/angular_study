@@ -1,1 +1,3 @@
-
+<p> user name: {{ getUserNameToShow() }}</p>
+<input  [ngModel]="enteredText" (ngModelChange)="type($event)" />
+<button [disabled]="!isSubmitButtonEnabled()" (click)="submit()">SUBMIT</button>
